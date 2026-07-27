@@ -122,7 +122,7 @@ export default function Home() {
       </section>
 
       <section
-        id="projects"
+        id="project"
         className="bg-linear-to-b from-green-300 to-green-50 min-h-screen py-32 px-8 flex flex-col justify-center"
       >
         <div className="max-w-6xl mx-auto w-full">
@@ -173,7 +173,7 @@ export default function Home() {
       <footer className="bg-green-50 py-16 text-center border-t border-green-200/60">
         <div className="max-w-4xl mx-auto px-8">
           <h2 className="text-3xl font-bold text-green-950 mb-6">Let's build something efficient.</h2>
-          <a href="mailto:hello@example.com" className="inline-block bg-green-900 text-green-50 font-bold py-4 px-10 rounded-full hover:bg-green-800 transition-colors shadow-lg shadow-green-900/20 mb-16">
+          <a href="mailto:cey0@proton.me" className="inline-block bg-green-900 text-green-50 font-bold py-4 px-10 rounded-full hover:bg-green-800 transition-colors shadow-lg shadow-green-900/20 mb-16">
             Get In Touch
           </a>
           <div className="flex flex-col md:flex-row justify-between items-center text-green-900/60 text-sm gap-4">

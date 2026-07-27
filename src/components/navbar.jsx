@@ -84,7 +84,7 @@ export default function Navbar() {
         <div className="w-[2px] h-8 bg-green-300 mx-2" />
         {/* CV Button */}
         <a
-          href="/cv.pdf"
+          href="/Nadra_Saputra_Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="ml-2 px-4 py-2 rounded-md bg-green-500 text-white font-semibold shadow hover:bg-green-600 transition-colors duration-200 cursor-target"
