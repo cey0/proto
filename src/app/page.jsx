@@ -39,11 +39,11 @@ export default function Home() {
         id="home"
         className="flex h-screen items-center justify-center bg-linear-to-b from-green-50 from-82% to-100% to-green-200"
       >
-        <div className="title">
-          <h1 className="font-bold text-[2vw]">Hi, I'm a</h1>
+        <div className="title px-4">
+          <h1 className="font-bold text-2xl md:text-[2vw] text-center md:text-left">Hi, I'm a</h1>
           <SplitText
             text="Web Developer"
-            className="text-[9vw] font-semibold text-center leading-none tracking-tighter pb-4 pt-2"
+            className="text-5xl sm:text-7xl md:text-[9vw] font-semibold text-center leading-none tracking-tighter pb-4 pt-2"
             delay={50}
             duration={0.6}
             ease="power3.out"
@@ -54,8 +54,8 @@ export default function Home() {
             rootMargin="-100px"
             textAlign="center"
           />
-          <div className="flex justify-between mt-4">
-            <div className="button flex justify-center items-center gap-4">
+          <div className="flex flex-col md:flex-row justify-between items-center md:items-end mt-4 gap-6 md:gap-0">
+            <div className="button flex flex-wrap justify-center items-center gap-4">
               <a
                 href="#projects"
                 className="drop-shadow-2xl bg-green-500 hover:bg-green-600 transition-colors py-3 px-6 rounded-xl text-white font-medium shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-green-400 cursor-pointer"
@@ -69,7 +69,7 @@ export default function Home() {
                 About Me
               </a>
             </div>
-            <h2 className="text-right text-[2vw] font-medium cursor-target self-end">
+            <h2 className="text-center md:text-right text-xl md:text-[2vw] font-medium self-center md:self-end">
               Nadra Zaki Saputra
             </h2>
           </div>
@@ -85,8 +85,8 @@ export default function Home() {
         className="bg-linear-to-b from-green-200 to-green-300 min-h-screen flex flex-col justify-center items-center py-20 px-8"
       >
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-16 items-center">
-          <div className="flex-1 space-y-6 text-green-950">
-            <h2 className="text-[4vw] md:text-5xl font-bold leading-tight mb-8">
+          <div className="flex-1 space-y-4 sm:space-y-6 text-green-950 text-center md:text-left">
+            <h2 className="text-4xl md:text-[4vw] font-bold leading-tight mb-4 sm:mb-8">
               About Me
             </h2>
             <p className="text-xl leading-relaxed text-green-900">
@@ -96,23 +96,23 @@ export default function Home() {
               My approach focuses on clean code, optimal performance, and intuitive design principles. I believe that great web development doesn't just solve problems; it creates accessible, sustainable platforms that leave a lasting impression while minimizing resource waste.
             </p>
           </div>
-          <div className="flex-1 grid grid-cols-2 gap-6 w-full">
-            <div className="bg-white/40 backdrop-blur-sm p-8 rounded-3xl shadow-sm border border-white/50 flex flex-col items-center justify-center text-center hover:bg-white/60 transition-colors">
+          <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 w-full">
+            <div className="bg-white/40 backdrop-blur-sm p-6 sm:p-8 rounded-3xl shadow-sm border border-white/50 flex flex-col items-center justify-center text-center hover:bg-white/60 transition-colors">
               <span className="text-5xl mb-4">🚀</span>
               <h3 className="font-bold text-green-950 text-lg">Performance</h3>
               <p className="text-sm text-green-800 mt-1">Optimized APIs</p>
             </div>
-            <div className="bg-white/40 backdrop-blur-sm p-8 rounded-3xl shadow-sm border border-white/50 flex flex-col items-center justify-center text-center hover:bg-white/60 transition-colors">
+            <div className="bg-white/40 backdrop-blur-sm p-6 sm:p-8 rounded-3xl shadow-sm border border-white/50 flex flex-col items-center justify-center text-center hover:bg-white/60 transition-colors">
               <span className="text-5xl mb-4">🔒</span>
               <h3 className="font-bold text-green-950 text-lg">Security</h3>
               <p className="text-sm text-green-800 mt-1">Data protection</p>
             </div>
-            <div className="bg-white/40 backdrop-blur-sm p-8 rounded-3xl shadow-sm border border-white/50 flex flex-col items-center justify-center text-center hover:bg-white/60 transition-colors">
+            <div className="bg-white/40 backdrop-blur-sm p-6 sm:p-8 rounded-3xl shadow-sm border border-white/50 flex flex-col items-center justify-center text-center hover:bg-white/60 transition-colors">
               <span className="text-5xl mb-4">🌱</span>
               <h3 className="font-bold text-green-950 text-lg">Eco-Friendly</h3>
               <p className="text-sm text-green-800 mt-1">Efficient code</p>
             </div>
-            <div className="bg-white/40 backdrop-blur-sm p-8 rounded-3xl shadow-sm border border-white/50 flex flex-col items-center justify-center text-center hover:bg-white/60 transition-colors">
+            <div className="bg-white/40 backdrop-blur-sm p-6 sm:p-8 rounded-3xl shadow-sm border border-white/50 flex flex-col items-center justify-center text-center hover:bg-white/60 transition-colors">
               <span className="text-5xl mb-4">📱</span>
               <h3 className="font-bold text-green-950 text-lg">Responsive</h3>
               <p className="text-sm text-green-800 mt-1">All devices</p>
@@ -126,8 +126,8 @@ export default function Home() {
         className="bg-linear-to-b from-green-300 to-green-50 min-h-screen py-32 px-8 flex flex-col justify-center"
       >
         <div className="max-w-6xl mx-auto w-full">
-          <div className="flex justify-between items-end mb-16">
-            <h2 className="text-[4vw] md:text-5xl font-bold text-green-950">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 md:mb-16 gap-4">
+            <h2 className="text-4xl md:text-[4vw] font-bold text-green-950">
               Selected Work
             </h2>
             <a href="#" className="text-green-700 font-bold hover:text-green-900 transition-colors hidden md:block">
@@ -145,7 +145,7 @@ export default function Home() {
                   <img src={project.image} alt={project.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-green-900/20 group-hover:bg-transparent transition-colors z-10"></div>
                 </div>
-                <div className="p-8 flex-1 flex flex-col">
+                <div className="p-6 sm:p-8 flex-1 flex flex-col">
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.techStack.map(tech => (
                       <span key={tech} className="px-3 py-1 bg-green-50 text-green-700 text-xs font-bold rounded-full border border-green-200">{tech}</span>
@@ -171,9 +171,9 @@ export default function Home() {
       </section>
       
       <footer className="bg-green-50 py-16 text-center border-t border-green-200/60">
-        <div className="max-w-4xl mx-auto px-8">
-          <h2 className="text-3xl font-bold text-green-950 mb-6">Let's build something efficient.</h2>
-          <a href="mailto:cey0@proton.me" className="inline-block bg-green-900 text-green-50 font-bold py-4 px-10 rounded-full hover:bg-green-800 transition-colors shadow-lg shadow-green-900/20 mb-16">
+        <div className="max-w-4xl mx-auto px-6 sm:px-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-green-950 mb-6">Let's build something efficient.</h2>
+          <a href="mailto:cey0@proton.me" className="inline-block bg-green-900 text-green-50 font-bold py-3 sm:py-4 px-8 sm:px-10 rounded-full hover:bg-green-800 transition-colors shadow-lg shadow-green-900/20 mb-12 sm:mb-16">
             Get In Touch
           </a>
           <div className="flex flex-col md:flex-row justify-between items-center text-green-900/60 text-sm gap-4">
